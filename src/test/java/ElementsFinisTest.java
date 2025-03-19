@@ -105,7 +105,7 @@ public class ElementsFinisTest {
         System.out.println("Tests avec u(x) = 1");
         System.out.println("Cas avec 320 points entre 0 et 1");
         int[] nbsMailles = {10, 20, 40, 80, 160, 320};
-        int nbMailles = 321;
+        int nbMailles = 11;
         ArrayList<Double> fValues = new ArrayList();
         double pas = 1.0/(nbMailles-1);
         double init =0.0;
@@ -205,7 +205,7 @@ public class ElementsFinisTest {
         System.out.println("Tests avec u(x) = x");
         System.out.println("Cas avec 320 points entre 0 et 1");
         int[] nbsMailles = {10, 20, 40, 80, 160, 320};
-        int nbMailles = 321;
+        int nbMailles = 11;
         ArrayList<Double> fValues = new ArrayList();
         double pas = 1.0/(nbMailles-1);
         double init =0.0;
@@ -306,7 +306,7 @@ public class ElementsFinisTest {
         System.out.println("Tests avec f(x) = x^2");
         System.out.println("Cas avec 320 points entre 0 et 1");
         int[] nbsMailles = {10, 20, 40, 80, 160, 320};
-        int nbMailles = 321;
+        int nbMailles = 11;
         ArrayList<Double> fValues = new ArrayList();
         double pas = 1.0/(nbMailles-1);
         double init =0.0;
@@ -407,7 +407,7 @@ public class ElementsFinisTest {
         System.out.println("Tests avec f(x) = x^3");
         System.out.println("Cas avec 320 points entre 0 et 1");
         int[] nbsMailles = {10, 20, 40, 80, 160, 320};
-        int nbMailles = 321;
+        int nbMailles = 11;
         ArrayList<Double> fValues = new ArrayList();
         double pas = 1.0/(nbMailles-1);
         double init =0.0;
@@ -508,7 +508,7 @@ public class ElementsFinisTest {
         System.out.println("Tests avec f(x) = sin(pi*x)");
         System.out.println("Cas avec 320 points entre 0 et 1");
         int[] nbsMailles = {10, 20, 40, 80, 160, 320};
-        int nbMailles = 321;
+        int nbMailles = 11;
         ArrayList<Double> fValues = new ArrayList();
         double pas = 1.0/(nbMailles-1);
         double init =0.0;

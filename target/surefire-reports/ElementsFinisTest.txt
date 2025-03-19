@@ -1,4 +1,28 @@
 -------------------------------------------------------------------------------
 Test set: ElementsFinisTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 156.943 s - in ElementsFinisTest
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 124.942 s <<< FAILURE! - in ElementsFinisTest
+ElementsFinisTest.differencesFiniesTest1  Time elapsed: 1.189 s  <<< ERROR!
+java.lang.IllegalStateException: We should never get here.
+	at org.jfree.chart.axis.NumberTickUnitSource.previous(NumberTickUnitSource.java:166)
+	at org.jfree.chart.axis.NumberTickUnitSource.getCeilingTickUnit(NumberTickUnitSource.java:119)
+	at org.jfree.chart.axis.NumberAxis.selectVerticalAutoTickUnit(NumberAxis.java:837)
+	at org.jfree.chart.axis.NumberAxis.selectAutoTickUnit(NumberAxis.java:760)
+	at org.jfree.chart.axis.NumberAxis.refreshTicksVertical(NumberAxis.java:989)
+	at org.jfree.chart.axis.NumberAxis.refreshTicks(NumberAxis.java:869)
+	at org.jfree.chart.axis.ValueAxis.reserveSpace(ValueAxis.java:730)
+	at org.jfree.chart.plot.XYPlot.calculateRangeAxisSpace(XYPlot.java:2785)
+	at org.jfree.chart.plot.XYPlot.calculateAxisSpace(XYPlot.java:2696)
+	at org.jfree.chart.plot.XYPlot.draw(XYPlot.java:2840)
+	at org.jfree.chart.JFreeChart.draw(JFreeChart.java:1160)
+	at org.jfree.chart.JFreeChart.createBufferedImage(JFreeChart.java:1327)
+	at org.jfree.chart.JFreeChart.createBufferedImage(JFreeChart.java:1308)
+	at org.jfree.chart.ChartUtils.writeChartAsPNG(ChartUtils.java:142)
+	at org.jfree.chart.ChartUtils.saveChartAsPNG(ChartUtils.java:268)
+	at org.jfree.chart.ChartUtils.saveChartAsPNG(ChartUtils.java:243)
+	at ElementsFinisTest.saveImage(ElementsFinisTest.java:89)
+	at ElementsFinisTest.differencesFiniesTest1(ElementsFinisTest.java:193)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
