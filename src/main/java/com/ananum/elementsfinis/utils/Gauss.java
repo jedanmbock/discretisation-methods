@@ -90,8 +90,6 @@ public class Gauss {
         for (double nombre: vecteur){
             resultat.add(0.0);
         }
-        System.out.println(matrix);
-        System.out.println(vecteur);
         try{
             resultat.set(vecteur.size()-1, vecteur.get(vecteur.size()-1)/matrix.get(vecteur.size()-1, vecteur.size()-1));
             for (int i = vecteur.size()-2; -1<i; i--){

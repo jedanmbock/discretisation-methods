@@ -9,6 +9,15 @@ import com.ananum.elementsfinis.utils.Gauss;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.math.plot.Plot2DPanel;
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.data.xy.XYSeries;
+import org.jfree.data.xy.XYSeriesCollection;
+
+import javax.swing.*;
 
 /**
  *
@@ -41,7 +50,6 @@ public class ElementsFinis {
                 }
             }
         }
-        System.out.println(newValues);
         Gauss resolve = new Gauss();
         return resolve.resolution(matrix, newValues);
     }
@@ -66,18 +74,52 @@ public class ElementsFinis {
 //        System.out.println(new CRS(matrix));
 //        System.out.println(resolve.resolution(new CRS(matrix), vecteur));
 
-        System.out.println("Vérification differncesFinies.");
-        ArrayList<Double> vecteur = new ArrayList();
-        for(int i = 0; i<10; i++){
-            vecteur.add(-2.0);
-        }
-        ArrayList<Double> expected = new ArrayList();
-        for(int i = 0; i<10; i++){
-            expected.add((i+1)*(i+1)/(11.0*11.0));
-        }
+//        System.out.println("Vérification differncesFinies.");
+//        ArrayList<Double> vecteur = new ArrayList();
+//        for(int i = 0; i<10; i++){
+//            vecteur.add(-2.0);
+//        }
+//        ArrayList<Double> expected = new ArrayList();
+//        for(int i = 0; i<10; i++){
+//            expected.add((i+1)*(i+1)/(11.0*11.0));
+//        }
+//        
+//        
+//        System.out.println("Obtenus: "+ElementsFinis.differencesFinies(11,vecteur,0,1));
+//        System.out.println("Attendus: "+expected);
+
+        //Test JMathPlot
+//        Plot2DPanel plot = new Plot2DPanel();
+//        
+//        double[] x = new double[21];
+//        double[] y = new double[21];
+//        for (int i = 0; i < x.length; i++) {
+//            x[i] = i - 10;
+//            y[i] = x[i] * x[i];
+//        }
+//
+//        plot.addLinePlot("y = x^2", x, y);
+//
+//        JFrame frame = new JFrame("JMathPlot");
+//        frame.setContentPane(plot);
+//        frame.setSize(600, 400);
+//        frame.setVisible(true);
+//        XYSeries series = new XYSeries("y = x^2");
+//        for (double x = -10; x <= 10; x += 0.5) {
+//            series.add(x, x * x);
+//        }
+//
+//        XYSeriesCollection dataset = new XYSeriesCollection(series);
+//        JFreeChart chart = ChartFactory.createXYLineChart(
+//                "Courbe Quadratique", "X", "Y",
+//                dataset, PlotOrientation.VERTICAL, true, true, false);
+//
+//        JFrame frame = new JFrame("Graphique");
+//        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//        frame.getContentPane().add(new ChartPanel(chart));
+//        frame.pack();
+//        frame.setVisible(true);
+
         
-        
-        System.out.println("Obtenus: "+ElementsFinis.differencesFinies(11,vecteur,0,1));
-        System.out.println("Attendus: "+expected);
     }
 }
