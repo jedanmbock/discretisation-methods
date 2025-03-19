@@ -104,10 +104,10 @@ public class ElementsFinisTest {
     public void differencesFiniesTest1(){
         System.out.println("Tests avec u(x) = 1");
         System.out.println("Cas avec 320 points entre 0 et 1");
-        int[] nbsMailles = {10, 20, 40, 80, 160, 320};
-        int nbMailles = 11;
+        int[] nbsMailles = {11, 21, 41, 81, 161, 321};
+        int nbMailles = 321;
         ArrayList<Double> fValues = new ArrayList();
-        double pas = 1.0/(nbMailles-1);
+        double pas = 1.0/(nbMailles);
         double init =0.0;
         for(int i = 0; i<nbMailles-1; i++){
             init += pas;
@@ -139,7 +139,7 @@ public class ElementsFinisTest {
             FileWriter writer = new FileWriter("Test1_u(x)=1.txt");
             for (int i:nbsMailles){
                 ArrayList<Double> fValuesI = new ArrayList();
-                double pasI = 1.0/(i-1);
+                double pasI = 1.0/(i);
                 double initI =0.0;
                 for(int j = 0; j<i-1; j++){
                     initI += pas;
@@ -204,10 +204,10 @@ public class ElementsFinisTest {
     public void differencesFiniesTest2(){
         System.out.println("Tests avec u(x) = x");
         System.out.println("Cas avec 320 points entre 0 et 1");
-        int[] nbsMailles = {10, 20, 40, 80, 160, 320};
-        int nbMailles = 11;
+        int[] nbsMailles = {11, 21, 41, 81, 161, 321};
+        int nbMailles = 321;
         ArrayList<Double> fValues = new ArrayList();
-        double pas = 1.0/(nbMailles-1);
+        double pas = 1.0/(nbMailles);
         double init =0.0;
         for(int i = 0; i<nbMailles-1; i++){
             init += pas;
@@ -240,7 +240,7 @@ public class ElementsFinisTest {
             FileWriter writer = new FileWriter("Test2_u(x)=x.txt");
             for (int i:nbsMailles){
                 ArrayList<Double> fValuesI = new ArrayList();
-                double pasI = 1.0/(i-1);
+                double pasI = 1.0/(i);
                 double initI =0.0;
                 for(int j = 0; j<i-1; j++){
                     initI += pas;
@@ -305,10 +305,10 @@ public class ElementsFinisTest {
     public void differencesFiniesTest3(){
         System.out.println("Tests avec f(x) = x^2");
         System.out.println("Cas avec 320 points entre 0 et 1");
-        int[] nbsMailles = {10, 20, 40, 80, 160, 320};
-        int nbMailles = 11;
+        int[] nbsMailles = {11, 21, 41, 81, 161, 321};
+        int nbMailles = 321;
         ArrayList<Double> fValues = new ArrayList();
-        double pas = 1.0/(nbMailles-1);
+        double pas = 1.0/(nbMailles);
         double init =0.0;
         for(int i = 0; i<nbMailles-1; i++){
             init += pas;
@@ -341,7 +341,7 @@ public class ElementsFinisTest {
             FileWriter writer = new FileWriter("Test3_u(x)=x^2.txt");
             for (int i:nbsMailles){
                 ArrayList<Double> fValuesI = new ArrayList();
-                double pasI = 1.0/(i-1);
+                double pasI = 1.0/(i);
                 double initI =0.0;
                 for(int j = 0; j<i-1; j++){
                     initI += pas;
@@ -406,10 +406,10 @@ public class ElementsFinisTest {
     public void differencesFiniesTest4(){
         System.out.println("Tests avec f(x) = x^3");
         System.out.println("Cas avec 320 points entre 0 et 1");
-        int[] nbsMailles = {10, 20, 40, 80, 160, 320};
-        int nbMailles = 11;
+        int[] nbsMailles = {11, 21, 41, 81, 161, 321};
+        int nbMailles = 321;
         ArrayList<Double> fValues = new ArrayList();
-        double pas = 1.0/(nbMailles-1);
+        double pas = 1.0/(nbMailles);
         double init =0.0;
         for(int i = 0; i<nbMailles-1; i++){
             init += pas;
@@ -442,7 +442,7 @@ public class ElementsFinisTest {
             FileWriter writer = new FileWriter("Test4_u(x)=x^3.txt");
             for (int i:nbsMailles){
                 ArrayList<Double> fValuesI = new ArrayList();
-                double pasI = 1.0/(i-1);
+                double pasI = 1.0/(i);
                 double initI =0.0;
                 for(int j = 0; j<i-1; j++){
                     initI += pas;
@@ -507,10 +507,10 @@ public class ElementsFinisTest {
     public void differencesFiniesTest5(){
         System.out.println("Tests avec f(x) = sin(pi*x)");
         System.out.println("Cas avec 320 points entre 0 et 1");
-        int[] nbsMailles = {10, 20, 40, 80, 160, 320};
-        int nbMailles = 11;
+        int[] nbsMailles = {11, 21, 41, 81, 161, 321};
+        int nbMailles = 321;
         ArrayList<Double> fValues = new ArrayList();
-        double pas = 1.0/(nbMailles-1);
+        double pas = 1.0/(nbMailles);
         double init =0.0;
         for(int i = 0; i<nbMailles-1; i++){
             init += pas;
@@ -543,7 +543,7 @@ public class ElementsFinisTest {
             FileWriter writer = new FileWriter("Test4_u(x)=sin(pi x).txt");
             for (int i:nbsMailles){
                 ArrayList<Double> fValuesI = new ArrayList();
-                double pasI = 1.0/(i-1);
+                double pasI = 1.0/(i);
                 double initI =0.0;
                 for(int j = 0; j<i-1; j++){
                     initI += pas;
