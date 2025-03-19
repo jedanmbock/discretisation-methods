@@ -1,12 +1,14 @@
 
 import com.ananum.elementsfinis.ElementsFinis;
 import java.awt.Color;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import javax.swing.JFrame;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
+import org.jfree.chart.ChartUtils;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.xy.XYSeries;
@@ -73,8 +75,29 @@ public class ElementsFinisTest {
             erreurs.add(this.erreur(actual.get(i),expected.get(i)));
         return erreurs;
     }
+    
     public double norme(ArrayList<Double> erreurs){
         return erreurs.stream().reduce(0.0, (a, b)->Math.max(a,b));
+    }
+    
+    public void saveImage(String name, JFreeChart chart){
+        File file = new File(name);
+
+        try {
+            if (file.createNewFile()) {
+                System.out.println("Fichier créé : " + file.getAbsolutePath());
+                ChartUtils.saveChartAsPNG(file, chart, 800, 600);
+                System.out.println("Image enregistrée.");
+            } else {
+                System.out.println("Le fichier existe déjà.");
+                ChartUtils.saveChartAsPNG(file, chart, 800, 600);
+                System.out.println("Image enregistrée.");
+            }
+        } catch (IOException e) {
+            System.out.println("Erreur lors de la création du fichier : " + e.getMessage());
+        }
+        
+        
     }
     
     @Test
@@ -167,6 +190,8 @@ public class ElementsFinisTest {
         frameErreur.getContentPane().add(new ChartPanel(chartErreur));
         frameErreur.pack();
         frameErreur.setVisible(true);
+        this.saveImage("Graphique1_u(x)=1.png", chart);
+        this.saveImage("Erreurs1_u(x)=1.png", chartErreur);
         try{
             Thread.sleep(30000);
         }catch(Exception e){
@@ -266,6 +291,8 @@ public class ElementsFinisTest {
         frameErreur.getContentPane().add(new ChartPanel(chartErreur));
         frameErreur.pack();
         frameErreur.setVisible(true);
+        this.saveImage("Graphique2_u(x)=x.png", chart);
+        this.saveImage("Erreurs2_u(x)=x.png", chartErreur);
         try{
             Thread.sleep(30000);
         }catch(Exception e){
@@ -365,6 +392,8 @@ public class ElementsFinisTest {
         frameErreur.getContentPane().add(new ChartPanel(chartErreur));
         frameErreur.pack();
         frameErreur.setVisible(true);
+        this.saveImage("Graphique3_u(x)=x^2.png", chart);
+        this.saveImage("Erreurs3_u(x)=x^2.png", chartErreur);
         try{
             Thread.sleep(30000);
         }catch(Exception e){
@@ -464,6 +493,8 @@ public class ElementsFinisTest {
         frameErreur.getContentPane().add(new ChartPanel(chartErreur));
         frameErreur.pack();
         frameErreur.setVisible(true);
+        this.saveImage("Graphique4_u(x)=x^3.png", chart);
+        this.saveImage("Erreurs4_u(x)=x^3.png", chartErreur);
         try{
             Thread.sleep(30000);
         }catch(Exception e){
@@ -563,6 +594,8 @@ public class ElementsFinisTest {
         frameErreur.getContentPane().add(new ChartPanel(chartErreur));
         frameErreur.pack();
         frameErreur.setVisible(true);
+        this.saveImage("Graphique5_u(x)=sin(pi x).png", chart);
+        this.saveImage("Erreurs5_u(x)=sin(pi x).png", chartErreur);
         try{
             Thread.sleep(30000);
         }catch(Exception e){
