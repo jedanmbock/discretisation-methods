@@ -52,7 +52,7 @@ public class ElementsFinisTest {
     }
     
     public double funct4(double x){
-        return 6*x;
+        return -6*x;
     }
     
     public double uPasExact2(double x){
@@ -60,7 +60,7 @@ public class ElementsFinisTest {
     }
     
     public double funct5(double x){
-        return -Math.PI * Math.PI *Math.sin(Math.PI*x);
+        return Math.PI * Math.PI *Math.sin(Math.PI*x);
     }
     
     public double erreur(double actual, double expected){
