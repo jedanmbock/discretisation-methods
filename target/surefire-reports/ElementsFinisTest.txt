@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ElementsFinisTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 157.982 s - in ElementsFinisTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 159.384 s - in ElementsFinisTest

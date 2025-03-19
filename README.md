@@ -1,3 +1,6 @@
 **Version avec CRS du TP**
 
-Pour l'exécuter, Utiliser netbeans ou tapez java -cp target/ElementsFinis-1.0.jar com.ananum.elementsfinis.ElementsFinis
+Pour l'exécuter, faire:
+
+- Utiliser netbeans (Ouvrir le projet, clic droit sur le projet, clic sur "Test") ou 
+- tapez mvn test si vous avez maven installé.
