@@ -1,3 +1,13 @@
-com\ananum\elementsfinis\utils\CRS.class
-com\ananum\elementsfinis\utils\Gauss.class
+com\ananum\elementsfinis\methods\DifferencesFinies.class
+com\ananum\elementsfinis\utils\HeatmapPanel$1.class
+com\ananum\elementsfinis\utils\Function.class
+com\ananum\elementsfinis\utils\HeatmapPanel.class
+com\ananum\elementsfinis\methods\FiniteDifferenceSolver.class
+com\ananum\elementsfinis\methods\VolumesFinis.class
+com\ananum\elementsfinis\utils\GUI.class
 com\ananum\elementsfinis\ElementsFinis.class
+com\ananum\elementsfinis\utils\Gauss.class
+com\ananum\elementsfinis\utils\HeatmapWithZoom$1.class
+com\ananum\elementsfinis\utils\HeatmapWithZoom.class
+com\ananum\elementsfinis\utils\CRS.class
+com\ananum\elementsfinis\utils\HeatMapViewer.class

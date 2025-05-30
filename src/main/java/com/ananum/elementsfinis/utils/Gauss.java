@@ -52,6 +52,7 @@ public class Gauss {
             return permutation;
         }catch(Exception e){
             System.out.println(e.getMessage());
+            System.out.println("Erreur dans elimination");
             return null;
         }
     }
@@ -81,6 +82,7 @@ public class Gauss {
             return permutation;
         }catch(Exception e){
             System.out.println(e.getMessage());
+            System.out.println("Erreur dans pivot");
             return null;
         }
     }
@@ -102,6 +104,7 @@ public class Gauss {
             return resultat;
         }catch(Exception e){
             System.out.println(e.getMessage());
+            System.out.println("Erreur dans remontee");
             return null;
         }
         

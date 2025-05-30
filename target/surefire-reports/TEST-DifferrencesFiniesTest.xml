@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ElementsFinisTest" time="9.936" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="DifferrencesFiniesTest" time="9.075" tests="5" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,9 +16,9 @@
     <property name="user.country" value="CM"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\JD\AppData\Local\Temp\surefire1216834420151029801\surefirebooter-20250423160201628_3.jar C:\Users\JD\AppData\Local\Temp\surefire1216834420151029801 2025-04-23T16-02-01_352-jvmRun1 surefire-20250423160201628_1tmp surefire_0-20250423160201628_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\JD\AppData\Local\Temp\surefire4194597175376562804\surefirebooter-20250422073628425_3.jar C:\Users\JD\AppData\Local\Temp\surefire4194597175376562804 2025-04-22T07-36-28_161-jvmRun1 surefire-20250422073628425_1tmp surefire_0-20250422073628425_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="ElementsFinisTest"/>
+    <property name="test" value="DifferrencesFiniesTest"/>
     <property name="surefire.test.class.path" value="C:\Users\JD\Documents\NetBeansProjects\ElementsFinis\target\test-classes;C:\Users\JD\Documents\NetBeansProjects\ElementsFinis\target\classes;C:\Users\JD\.m2\repository\org\jfree\jfreechart\1.5.3\jfreechart-1.5.3.jar;C:\Users\JD\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\JD\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\JD\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\JD\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\JD"/>
@@ -32,7 +32,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\JD\AppData\Local\Temp\surefire1216834420151029801\surefirebooter-20250423160201628_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\JD\AppData\Local\Temp\surefire4194597175376562804\surefirebooter-20250422073628425_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.14+7-LTS"/>
@@ -61,60 +61,83 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="differencesFiniesTest1" classname="ElementsFinisTest" time="2.743">
+  <testcase name="differencesFiniesTest1" classname="DifferrencesFiniesTest" time="1.517">
+    <error message="We should never get here." type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: We should never get here.
+	at org.jfree.chart.axis.NumberTickUnitSource.previous(NumberTickUnitSource.java:166)
+	at org.jfree.chart.axis.NumberTickUnitSource.getCeilingTickUnit(NumberTickUnitSource.java:119)
+	at org.jfree.chart.axis.NumberTickUnitSource.getCeilingTickUnit(NumberTickUnitSource.java:102)
+	at org.jfree.chart.axis.NumberTickUnitSource.getLargerTickUnit(NumberTickUnitSource.java:91)
+	at org.jfree.chart.axis.NumberAxis.selectVerticalAutoTickUnit(NumberAxis.java:843)
+	at org.jfree.chart.axis.NumberAxis.selectAutoTickUnit(NumberAxis.java:760)
+	at org.jfree.chart.axis.NumberAxis.refreshTicksVertical(NumberAxis.java:989)
+	at org.jfree.chart.axis.NumberAxis.refreshTicks(NumberAxis.java:869)
+	at org.jfree.chart.axis.ValueAxis.reserveSpace(ValueAxis.java:730)
+	at org.jfree.chart.plot.XYPlot.calculateRangeAxisSpace(XYPlot.java:2785)
+	at org.jfree.chart.plot.XYPlot.calculateAxisSpace(XYPlot.java:2696)
+	at org.jfree.chart.plot.XYPlot.draw(XYPlot.java:2840)
+	at org.jfree.chart.JFreeChart.draw(JFreeChart.java:1160)
+	at org.jfree.chart.JFreeChart.createBufferedImage(JFreeChart.java:1327)
+	at org.jfree.chart.JFreeChart.createBufferedImage(JFreeChart.java:1308)
+	at org.jfree.chart.ChartUtils.writeChartAsPNG(ChartUtils.java:142)
+	at org.jfree.chart.ChartUtils.saveChartAsPNG(ChartUtils.java:268)
+	at org.jfree.chart.ChartUtils.saveChartAsPNG(ChartUtils.java:243)
+	at DifferrencesFiniesTest.saveImage(DifferrencesFiniesTest.java:119)
+	at DifferrencesFiniesTest.drawGraphics(DifferrencesFiniesTest.java:215)
+	at DifferrencesFiniesTest.differencesFiniesTest1(DifferrencesFiniesTest.java:237)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></error>
     <system-out><![CDATA[Tests avec u(x) = 1
-Cas avec 6 points entre 0 et 1
-Erreur de calcul: 0.0
+Cas avec 320 points entre 0 et 1
+Erreur de calcul: 5.551115123125783E-16
 -------------------------------------------------------------
-La vitesse de convergence est: -1.5413481529329074
+La vitesse de convergence est: -1.2477974293572769
 Le fichier existe déjà.
-Image enregistrée.
-Le fichier existe déjà.
-Image enregistrée.
 ]]></system-out>
   </testcase>
-  <testcase name="differencesFiniesTest2" classname="ElementsFinisTest" time="2.053">
+  <testcase name="differencesFiniesTest2" classname="DifferrencesFiniesTest" time="2.221">
     <system-out><![CDATA[Tests avec u(x) = x
-Cas avec 6 points entre 0 et 1
-Erreur de calcul: 0.0
+Cas avec 320 points entre 0 et 1
+Erreur de calcul: 3.3306690738754696E-16
 -------------------------------------------------------------
-La vitesse de convergence est: -1.1506762145397667
+La vitesse de convergence est: -1.0
 Le fichier existe déjà.
 Image enregistrée.
 Le fichier existe déjà.
 Image enregistrée.
 ]]></system-out>
   </testcase>
-  <testcase name="differencesFiniesTest3" classname="ElementsFinisTest" time="1.752">
+  <testcase name="differencesFiniesTest3" classname="DifferrencesFiniesTest" time="1.904">
     <system-out><![CDATA[Tests avec f(x) = x^2
-Cas avec 6 points entre 0 et 1
-Erreur de calcul: 1.1102230246251565E-16
+Cas avec 320 points entre 0 et 1
+Erreur de calcul: 3.3306690738754696E-16
 -------------------------------------------------------------
-La vitesse de convergence est: -0.91456584542115
+La vitesse de convergence est: -1.041357241645759
 Le fichier existe déjà.
 Image enregistrée.
 Le fichier existe déjà.
 Image enregistrée.
 ]]></system-out>
   </testcase>
-  <testcase name="differencesFiniesTest4" classname="ElementsFinisTest" time="1.591">
+  <testcase name="differencesFiniesTest4" classname="DifferrencesFiniesTest" time="1.688">
     <system-out><![CDATA[Tests avec f(x) = x^3
-Cas avec 6 points entre 0 et 1
-Erreur de calcul: 2.220446049250313E-16
+Cas avec 320 points entre 0 et 1
+Erreur de calcul: 0.0010196352254967511
 -------------------------------------------------------------
-La vitesse de convergence est: -0.5943879306316141
+La vitesse de convergence est: 2.0038914996302024
 Le fichier existe déjà.
 Image enregistrée.
 Le fichier existe déjà.
 Image enregistrée.
 ]]></system-out>
   </testcase>
-  <testcase name="differencesFiniesTest5" classname="ElementsFinisTest" time="1.73">
+  <testcase name="differencesFiniesTest5" classname="DifferrencesFiniesTest" time="1.689">
     <system-out><![CDATA[Tests avec f(x) = sin(pi*x)
-Cas avec 6 points entre 0 et 1
-Erreur de calcul: 0.023162918763080187
+Cas avec 320 points entre 0 et 1
+Erreur de calcul: 0.0070032660632934896
 -------------------------------------------------------------
-La vitesse de convergence est: 2.0018886829399696
+La vitesse de convergence est: 2.0045937795081756
 Le fichier existe déjà.
 Image enregistrée.
 Le fichier existe déjà.

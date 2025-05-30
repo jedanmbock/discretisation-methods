@@ -4,12 +4,15 @@
 
 package com.ananum.elementsfinis;
 
+import com.ananum.elementsfinis.methods.VolumesFinis;
 import com.ananum.elementsfinis.utils.CRS;
 import com.ananum.elementsfinis.utils.Gauss;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
-import org.math.plot.Plot2DPanel;
+import java.util.Map;
+import java.util.Scanner;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
@@ -24,35 +27,6 @@ import javax.swing.*;
  * @author JD
  */
 public class ElementsFinis {
-    
-    public static ArrayList<Double> differencesFinies(int nbMailles, ArrayList<Double> fValues, double zeroValue, double oneValue){
-        double[][] A = new double[nbMailles-1][nbMailles-1];
-        
-        for (int i = 0; i<nbMailles-1; i++){
-            for(int j = 0; j<nbMailles-1; j++){
-                if(j == i)
-                    A[i][j] = 2.0*(nbMailles*nbMailles);
-                if(j == i-1 || j == i+1)
-                    A[i][j] = -1.0*(nbMailles*nbMailles);
-            }
-        }
-        
-        CRS matrix = new CRS(A);
-        ArrayList<Double> newValues = new ArrayList();
-        for (int i = 0; i<fValues.size();i++){
-            if(i == 0){
-                newValues.add(fValues.get(i)+zeroValue*(nbMailles*nbMailles));
-            }else{
-                if(i == fValues.size()-1){
-                    newValues.add(fValues.get(i)+oneValue*(nbMailles*nbMailles));
-                }else{
-                    newValues.add(fValues.get(i));
-                }
-            }
-        }
-        Gauss resolve = new Gauss();
-        return resolve.resolution(matrix, newValues);
-    }
 
     public static void main(String[] args) {
 //        System.out.println("Vérifiction CRS");
@@ -120,6 +94,21 @@ public class ElementsFinis {
 //        frame.pack();
 //        frame.setVisible(true);
 
-        
+        //Test VolumesFinis.computeUtils
+//        double[] lambda = {1.0, 2.0};
+//        double[] limits = {0.0, 0.5, 1.0};
+//        HashMap<String, double[]> results = VolumesFinis.computeUtils(4,lambda , limits);
+//        for(Map.Entry<String, double[]> entry: results.entrySet()){
+//            System.out.println(entry.getKey()+" : "+ Arrays.toString(entry.getValue()));
+//        }
+        int equationChoice;
+        Scanner clavier = new Scanner(System.in);
+        do{
+            System.out.println("Choisir l'équation: ");
+            System.out.println("1 pour -u\"=f");
+            System.out.println("2 pour -u\"+u'=f");
+            equationChoice = clavier.nextInt();
+            System.out.println(equationChoice);
+        }while(equationChoice != 1 && equationChoice != 2);
     }
 }
