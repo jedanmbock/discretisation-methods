@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="DifferencesFiniesTest" time="3.282" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="sun.awt.enableExtraMouseButtons" value="true"/>
+    <property name="java.class.path" value="C:\Users\JD\Documents\NetBeansProjects\ElementsFinis\target\test-classes;C:\Users\JD\Documents\NetBeansProjects\ElementsFinis\target\classes;C:\Users\JD\.m2\repository\org\jfree\jfreechart\1.5.3\jfreechart-1.5.3.jar;C:\Users\JD\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\JD\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\JD\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\JD\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://www.azul.com/"/>
+    <property name="user.timezone" value="Africa/Douala"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="user.country" value="CM"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\JD\AppData\Local\Temp\surefire11875586769449550885\surefirebooter-20250619121116759_3.jar C:\Users\JD\AppData\Local\Temp\surefire11875586769449550885 2025-06-19T12-11-16_499-jvmRun1 surefire-20250619121116759_1tmp surefire_0-20250619121116759_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="DifferencesFiniesTest"/>
+    <property name="surefire.test.class.path" value="C:\Users\JD\Documents\NetBeansProjects\ElementsFinis\target\test-classes;C:\Users\JD\Documents\NetBeansProjects\ElementsFinis\target\classes;C:\Users\JD\.m2\repository\org\jfree\jfreechart\1.5.3\jfreechart-1.5.3.jar;C:\Users\JD\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\JD\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\JD\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\JD\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\JD"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\JD\Documents\NetBeansProjects\ElementsFinis"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\JD\AppData\Local\Temp\surefire11875586769449550885\surefirebooter-20250619121116759_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.14+7-LTS"/>
+    <property name="user.name" value="JD"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Zulu17.56+15-CA"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans-18\netbeans\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="localRepository" value="C:\Users\JD\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://www.azul.com/support/"/>
+    <property name="java.io.tmpdir" value="C:\Users\JD\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.14"/>
+    <property name="user.dir" value="C:\Users\JD\Documents\NetBeansProjects\ElementsFinis"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python312\Scripts\;C:\Python312\;C:\Users\JD\Documents\Python311\Scripts\;C:\Users\JD\Documents\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\swipl\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\CodeBlocks\MinGW\bin;C:\Users\JD\AppData\Roaming\Python\Python312\Scripts;C:\Program Files\Git\cmd;C:\Users\JD\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\JD\AppData\Roaming\nvm;C:\ProgramData\ComposerSetup\bin;C:\Users\JD\Documents\4GI_presentiel\Semestre1\grammaires_et_langages\sablecc-3.7\bin;C:\Users\JD\Documents\4GI_presentiel\Semestre1\grammaires_et_langages\sablecc-3.7\lib;C:\wamp64\bin\php\php8.3.6;C:\Users\JD\Documents\4GI_presentiel\Semestre2\SMA_Projet_Syst_Exp\jade\lib\jade.jar;C:\Program Files\NetBeans-18\netbeans\java\maven\bin;C:\Users\JD\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.1.4\bin;;C:\Users\JD\AppData\Roaming\npm;C:\Users\JD\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\JD\AppData\Roaming\Composer\vendor\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vm.version" value="17.0.14+7-LTS"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testEntry" classname="DifferencesFiniesTest" time="3.217">
+    <system-out><![CDATA[Tests sur les différences finies
+Choisir l'équation: 
+1 pour -u"=f
+2 pour -u"+u'=f
+1
+Choisir le test: 
+1 pour toutes les fonctions
+2 pour une fonction en particulier
+Choisir la fonction: 
+1 pour u(x)=1
+2 pour u(x)=x
+3 pour u(x)=x^2
+4 pour u(x)=x^3
+5 pour u(x)=sin(pi*x)
+Tests avec u(x)=sin(pi*x)
+Cas avec 6 points entre 0 et 1
+Erreur de calcul: 0.023162918763080187
+-------------------------------------------------------------
+La vitesse de convergence est: 2.0018886829399696
+Le fichier existe déjà.
+Image enregistrée.
+Le fichier existe déjà.
+Image enregistrée.
+]]></system-out>
+  </testcase>
+</testsuite>
